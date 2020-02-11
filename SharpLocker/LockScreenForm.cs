@@ -124,6 +124,8 @@ namespace SharpLocker
             catch (Exception ex)
             {
                 // log errors
+                Taskbar.Show();
+                System.Windows.Forms.Application.Exit();
             }
         }
 
